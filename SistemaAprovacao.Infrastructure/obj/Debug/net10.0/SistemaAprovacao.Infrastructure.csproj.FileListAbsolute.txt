@@ -1,0 +1,15 @@
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Infrastructure\bin\Debug\net10.0\SistemaAprovacao.Infrastructure.deps.json
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Infrastructure\bin\Debug\net10.0\SistemaAprovacao.Infrastructure.dll
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Infrastructure\bin\Debug\net10.0\SistemaAprovacao.Infrastructure.pdb
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Infrastructure\bin\Debug\net10.0\SistemaAprovacao.Domain.dll
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Infrastructure\bin\Debug\net10.0\SistemaAprovacao.Domain.pdb
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Infrastructure\obj\Debug\net10.0\SistemaAprovacao.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Infrastructure\obj\Debug\net10.0\SistemaAprovacao.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Infrastructure\obj\Debug\net10.0\SistemaAprovacao.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Infrastructure\obj\Debug\net10.0\SistemaAprovacao.Infrastructure.AssemblyInfo.cs
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Infrastructure\obj\Debug\net10.0\SistemaAprovacao.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Infrastructure\obj\Debug\net10.0\SistemaA.6184650E.Up2Date
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Infrastructure\obj\Debug\net10.0\SistemaAprovacao.Infrastructure.dll
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Infrastructure\obj\Debug\net10.0\refint\SistemaAprovacao.Infrastructure.dll
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Infrastructure\obj\Debug\net10.0\SistemaAprovacao.Infrastructure.pdb
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Infrastructure\obj\Debug\net10.0\ref\SistemaAprovacao.Infrastructure.dll

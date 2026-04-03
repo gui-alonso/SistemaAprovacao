@@ -1,0 +1,11 @@
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Domain\bin\Debug\net10.0\SistemaAprovacao.Domain.deps.json
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Domain\bin\Debug\net10.0\SistemaAprovacao.Domain.dll
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Domain\bin\Debug\net10.0\SistemaAprovacao.Domain.pdb
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Domain\obj\Debug\net10.0\SistemaAprovacao.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Domain\obj\Debug\net10.0\SistemaAprovacao.Domain.AssemblyInfoInputs.cache
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Domain\obj\Debug\net10.0\SistemaAprovacao.Domain.AssemblyInfo.cs
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Domain\obj\Debug\net10.0\SistemaAprovacao.Domain.csproj.CoreCompileInputs.cache
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Domain\obj\Debug\net10.0\SistemaAprovacao.Domain.dll
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Domain\obj\Debug\net10.0\refint\SistemaAprovacao.Domain.dll
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Domain\obj\Debug\net10.0\SistemaAprovacao.Domain.pdb
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Domain\obj\Debug\net10.0\ref\SistemaAprovacao.Domain.dll
