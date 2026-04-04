@@ -1,0 +1,52 @@
+@page "/nova-solicitacao"
+@using SistemaAprovacao.Blazor.Models
+@inject HttpClient Http
+@inject IJSRuntime JS
+
+<h3>Nova Solicitação</h3>
+
+<div class="card p-4">
+    <EditForm Model="@solicitacao" OnValidSubmit="HandleSubmit">
+        <div class="mb-3">
+            <label>Título</label>
+            <InputText @bind-Value="solicitacao.Titulo" class="form-control" />
+        </div>
+        
+        <div class="mb-3">
+            <label>Descrição</label>
+            <InputTextArea @bind-Value="solicitacao.Descricao" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label>Valor</label>
+            <InputNumber @bind-Value="solicitacao.Valor" class="form-control" />
+        </div>
+        
+        <button type="submit" class="btn btn-success">Enviar para Aprovação</button>
+    </EditForm>
+</div>
+
+@code {
+    // Agora o C# sabe exatamente o que é este objeto (Fim do erro de Dynamic!)
+    private SolicitacaoRequest solicitacao = new();
+
+    private async Task HandleSubmit()
+    {
+        try 
+        {
+            // O PostAsJsonAsync agora funciona porque 'solicitacao' não é mais dinâmica
+            var response = await Http.PostAsJsonAsync("api/solicitacao", solicitacao);
+
+            if (response.IsSuccessStatusCode)
+            {
+                // No Blazor, para usar o alert do navegador, chamamos via JS
+                await JS.InvokeVoidAsync("alert", "Solicitação enviada com sucesso ao SQL Server!");
+                solicitacao = new(); // Limpa o formulário
+            }
+        }
+        catch (Exception ex)
+        {
+            await JS.InvokeVoidAsync("alert", "Erro ao conectar com a API: " + ex.Message);
+        }
+    }
+}

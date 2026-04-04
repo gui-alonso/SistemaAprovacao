@@ -6,32 +6,40 @@ using SistemaAprovacao.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// --- CONFIGURAÇÃO DO BANCO DE DADOS (SQL SERVER / DOCKER) ---
-// 1. Buscamos a string de conexão que está no seu appsettings.json
+// 1. Banco de Dados (SQL Server via Docker)
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-
-// 2. Registramos o DbContext no container de Injeção de Dependência
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(connectionString));
 
-// --- REGISTRO DAS DEPENDÊNCIAS DO SISTEMA ---
-// Agora o Repositório vai receber o AppDbContext automaticamente via construtor
+// 2. Injeção de Dependência
 builder.Services.AddScoped<ISolicitacaoRepository, SolicitacaoRepository>();
 builder.Services.AddScoped<SolicitacaoAppService>();
 
-// Configurações padrão da Web API
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// 3. Configuração de CORS (Abertura para o Blazor)
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowBlazor", policy =>
+        policy.WithOrigins("http://localhost:5281", "https://localhost:5281") // Troque pelas portas do SEU Blazor
+              .AllowAnyMethod()
+              .AllowAnyHeader());
+});
+
 var app = builder.Build();
 
-// Configuração do Pipeline de Requisições (Middleware)
+// --- ORDEM DO PIPELINE (IMPORTANTE) ---
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// O CORS deve vir ANTES de Authorization e MapControllers
+app.UseCors("AllowBlazor");
 
 app.UseHttpsRedirection();
 app.UseAuthorization();

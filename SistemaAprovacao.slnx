@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="SistemaAprovacao.Application/SistemaAprovacao.Application.csproj" />
+  <Project Path="SistemaAprovacao.Blazor/SistemaAprovacao.Blazor.csproj" />
   <Project Path="SistemaAprovacao.Domain/SistemaAprovacao.Domain.csproj" />
   <Project Path="SistemaAprovacao.Infrastructure/SistemaAprovacao.Infrastructure.csproj" />
   <Project Path="SistemaAprovacao.Web/SistemaAprovacao.Web.csproj" />

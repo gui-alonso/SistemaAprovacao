@@ -1,33 +1,40 @@
+using Microsoft.EntityFrameworkCore;
 using SistemaAprovacao.Domain.Entities;
 using SistemaAprovacao.Domain.Interfaces;
+using SistemaAprovacao.Infrastructure.Data;
 
 namespace SistemaAprovacao.Infrastructure.Repositories;
 
 public class SolicitacaoRepository : ISolicitacaoRepository
 {
-    // Simulando o banco de dados com uma lista em memória
-    private static readonly List<Solicitacao> _db = new();
+    private readonly AppDbContext _context;
 
-    public Task AdicionarAsync(Solicitacao solicitacao)
+    public SolicitacaoRepository(AppDbContext context)
     {
-        _db.Add(solicitacao);
-        return Task.CompletedTask;
+        _context = context;
     }
 
-    public Task<Solicitacao?> ObterPorIdAsync(Guid id)
+    public async Task AdicionarAsync(Solicitacao solicitacao)
     {
-        return Task.FromResult(_db.FirstOrDefault(x => x.Id == id));
+        await _context.Solicitacoes.AddAsync(solicitacao);
+        
+        // ESTA LINHA É O "COMMIT": Ela envia o dado para o Docker
+        await _context.SaveChangesAsync(); 
     }
 
-    public Task<IEnumerable<Solicitacao>> ObterTodasAsync()
+    public async Task<Solicitacao?> ObterPorIdAsync(Guid id)
     {
-        return Task.FromResult(_db.AsEnumerable());
+        return await _context.Solicitacoes.FirstOrDefaultAsync(x => x.Id == id);
     }
 
-    public Task AtualizarAsync(Solicitacao solicitacao)
+    public async Task<IEnumerable<Solicitacao>> ObterTodasAsync()
     {
-        var index = _db.FindIndex(x => x.Id == solicitacao.Id);
-        if (index != -1) _db[index] = solicitacao;
-        return Task.CompletedTask;
+        return await _context.Solicitacoes.ToListAsync();
+    }
+
+    public async Task AtualizarAsync(Solicitacao solicitacao)
+    {
+        _context.Solicitacoes.Update(solicitacao);
+        await _context.SaveChangesAsync();
     }
 }
