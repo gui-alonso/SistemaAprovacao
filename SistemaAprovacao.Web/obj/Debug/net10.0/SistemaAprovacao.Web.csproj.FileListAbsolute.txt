@@ -37,3 +37,6 @@ C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Web\obj\Deb
 C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Web\obj\Debug\net10.0\SistemaAprovacao.Web.pdb
 C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Web\obj\Debug\net10.0\SistemaAprovacao.Web.genruntimeconfig.cache
 C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Web\obj\Debug\net10.0\ref\SistemaAprovacao.Web.dll
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Web\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Web\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\guilh\OneDrive\Documentos\SistemaAprovacao\SistemaAprovacao.Web\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
